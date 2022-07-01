@@ -21,7 +21,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import dev.arogundade.composeapp.utils.ANIM_INTERVAL
+import dev.arogundade.composeapp.ANIM_INTERVAL
 
 @Composable
 fun CircularProgress(value: Float, targetValue: Float, play: Boolean) {

@@ -17,7 +17,6 @@ import androidx.compose.ui.Modifier
 import androidx.lifecycle.lifecycleScope
 import dev.arogundade.composeapp.ui.progress.CircularProgress
 import dev.arogundade.composeapp.ui.theme.ComposeAppTheme
-import dev.arogundade.composeapp.utils.ANIM_INTERVAL
 import kotlinx.coroutines.delay
 
 class MainActivity : ComponentActivity() {
