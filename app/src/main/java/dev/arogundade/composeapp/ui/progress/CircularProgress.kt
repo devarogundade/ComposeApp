@@ -52,23 +52,25 @@ fun CircularProgress(value: Float, targetValue: Float, play: Boolean) {
                 contentAlignment = Alignment.Center
             ) {
                 if (play) {
-                    Canvas(modifier = Modifier
-                        .fillMaxSize(), onDraw = {
-                        drawArc(
-                            color = Color.Blue,
-                            useCenter = false,
-                            startAngle = -90f,
-                            sweepAngle = 360 * animatedPercentage.value,
-                            style = if (animatedPercentage.value >= 1) {
-                                Fill
-                            } else {
-                                Stroke(
-                                    width = 5f,
-                                    cap = StrokeCap.Round,
-                                )
-                            }
-                        )
-                    })
+                    Canvas(
+                        modifier = Modifier
+                            .fillMaxSize(),
+                        onDraw = {
+                            drawArc(
+                                color = Color.Blue,
+                                useCenter = false,
+                                startAngle = -90f,
+                                sweepAngle = 360 * animatedPercentage.value,
+                                style = if (animatedPercentage.value >= 1) {
+                                    Fill
+                                } else {
+                                    Stroke(
+                                        width = 5f,
+                                        cap = StrokeCap.Round,
+                                    )
+                                }
+                            )
+                        })
 
                     if (animatedPercentage.value >= 1) {
                         Icon(
